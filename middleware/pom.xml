@@ -89,6 +89,20 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <!--rocketmq-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>4.9.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-tools</artifactId>
+                <version>4.9.2</version>
+            </dependency>
+
+
         </dependencies>
 
 </project>
