@@ -11,3 +11,7 @@ spring:
         username: nacos
         password: nacos
         namespace: public
+      # loadbalancer只是为了后面的测试，因为nacos2.2.0关闭了这个，低版本的也不需要这个
+      loadbalancer:
+        nacos:
+          enabled: true
