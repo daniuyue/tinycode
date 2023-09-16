@@ -1,2 +1,13 @@
 server:
-  port: 7001
+  port: 8001
+
+spring:
+  application:
+    name: demo-client
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
