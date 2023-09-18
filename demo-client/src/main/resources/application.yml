@@ -1,33 +1,7 @@
-server:
-  port: 8001
-
 spring:
-  application:
-    name: demo-client
-  cloud:
-    # loadbalancer只是为了后面的测试，因为nacos2.2.0关闭了这个，低版本的也不需要这个
-    loadbalancer:
-      nacos:
-        enabled: true
-    nacos:
-      server-addr: 127.0.0.1:8848
-      discovery:
-        username: nacos
-        password: nacos
-        namespace: public
-
-logging:
-  level:
-    com.sakura.order.feign: debug # 这里我们可以单独配置feign的日志级别
-
-feign:
-  client:
-    config:
-      product-service:
-        logger-level: basic
-        connect-timeout: 5000 # 连接超时时间，默认2s
-        read-timeout: 6000 #请求处理超时时间，默认5s
-        #配置为生效
-        request-interceptors:
-          - org.tinycode.interceptor.fegin.DServerFeignInterceptor
-#          - com.sakura.order.interceptor.feign.CustomFeignInterceptor # 开启自定义拦截器
+  # 环境配置 例如 order-service-dev.yaml
+  # 在nacos上除了默认的配置文件,其它环境一定要带上后缀.yaml
+  profiles:
+    active: dev
+    #active: test # 表示测试环境
+    #active: info
