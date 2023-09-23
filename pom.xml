@@ -8,11 +8,11 @@
     <artifactId>tinycode</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>middleware</module>
-        <module>demo-client</module>
-        <module>demo-server</module>
-        <module>common</module>
-        <module>demo-gateway</module>
+        <module>tiny-middle</module>
+        <module>tiny-manage</module>
+        <module>tiny-server</module>
+        <module>tiny-common</module>
+        <module>tiny-gateway</module>
     </modules>
     <packaging>pom</packaging>
 

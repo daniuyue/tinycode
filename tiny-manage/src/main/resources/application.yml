@@ -1,0 +1,7 @@
+spring:
+  # 环境配置 例如 order-service-dev.yaml
+  # 在nacos上除了默认的配置文件,其它环境一定要带上后缀.yaml
+  profiles:
+    active: dev
+    #active: test # 表示测试环境
+    #active: info
