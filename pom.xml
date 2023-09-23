@@ -12,6 +12,7 @@
         <module>demo-client</module>
         <module>demo-server</module>
         <module>common</module>
+        <module>demo-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
